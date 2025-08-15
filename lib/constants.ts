@@ -104,7 +104,7 @@ export const projects: Project[] = [
 	{
 		title: 'Nose Landing Gear Repack Fixture',
 		description:
-			'Designed and implemented a smart home automation system using IoT technologies to control lighting, temperature, and security features.',
+			'Sweated and nerded shit out',
 		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
 		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
 		link: '#',
