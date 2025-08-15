@@ -105,7 +105,7 @@ export const projects: Project[] = [
 		title: 'Nose Landing Gear Repack Fixture',
 		description:
 			'Sweated and nerded shit out',
-		image: 'https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg',
+		image: 'images/xav.jpg',
 		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
 		link: '#',
 		repo: '#',
