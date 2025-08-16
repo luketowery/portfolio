@@ -58,7 +58,7 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.2)}
 						className="text-3xl md:text-4xl font-bold mb-4 text-primary"
 					>
-						Computer Science Engineering
+						Mechanical Engineering
 					</motion.h2>
 
 					<motion.h1
