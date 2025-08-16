@@ -139,12 +139,12 @@
 }
 
 .section-title {
-	@apply text-3xl font-bold mb-8 inline-block;
+	@apply text-3xl font-bold mb-4 inline-block;
 }
 
 .section-title::after {
 	content: '';
-	@apply block h-1 w-1/2 bg-primary mt-2 rounded-full;
+	@apply block h-1 w-full bg-primary mt-2 rounded-full;
 }
 
 .mask-image {
