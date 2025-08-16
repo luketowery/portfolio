@@ -102,32 +102,40 @@ export type Project = {
 
 export const projects: Project[] = [
 	{
-		title: 'Nose Landing Gear Repack Fixture',
+		title: 'A220 Nose Landing Gear Repack Fixture',
 		description:
-			'Sweated and nerded shit out',
-		image: 'images/xav.jpg',
-		tags: ['IoT', 'Arduino', 'C++', 'Mobile App'],
-		link: '#',
-		repo: '#',
+			'Modeled and improved the design of a welded fixture to carefully raise and lower the sliding tube of the A220 nose landing gear during installation and removal.',
+		image: '/images/A220 Nose Landing Gear Repack Fixture Cover Image.png',
+		tags: ['SolidWorks', 'Weldments', 'SolidWorks Drawings', 'Design for Manufacturing and Assembly'],
 	},
 	{
-		title: 'Structural Analysis Software',
+		title: 'Hoist Adapter for Cleaning Basket',
 		description:
-			'Developed software for structural analysis of beams and trusses using numerical methods and visualization techniques.',
-		image: 'https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg',
-		tags: ['MATLAB', 'Python', 'FEA', 'Structural Engineering'],
-		link: '#',
-		repo: '#',
+			'Designed a welded hoist adapter to lift 6’ x 6’ chemical cleaning baskets for turbofan engine parts, using stress hand calculations and SolidWorks Simulation to ensure yield resistance for loads of up to 2500 lbs.',
+		image: '/images/Hoist Adapter for Cleaning Basket Cover Image.png',
+		tags: ['SolidWorks', 'Weldments', 'SolidWorks Simualtion', 'Design for Manufacturing and Assembly'],
 	},
 	{
-		title: 'Renewable Energy Monitoring',
+		title: 'Pressure Decay Testing Fixture',
 		description:
-			'Created a system to monitor and analyze performance of solar panels and wind turbines for optimal energy production.',
-		image: 'https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg',
-		tags: ['Data Analysis', 'IoT', 'Renewable Energy', 'Visualization'],
-		link: '#',
-		repo: '#',
+			'Mitigated risk of multi-day disassembly setbacks due to defects in the oil tubes of an aircraft engine bearing by creating a custom pressure decay testing fixture using 3D scanning and DesignX to precisely match tube port geometry.',
+		image: '/images/Pressure Decay Testing Fixture Cover Image.png',
+		tags: ['3D Scanning', 'DesignX', 'SolidWorks', 'Reverse Engineering'],
 	},
+	{
+		title: 'Compressor Intermediate Case Lifting Fixture',
+		description:
+			'Designed a fixture to lift the ~700lb Compressor Intermediate Case of the Trent 7000 turbofan engine for plasma spraying in a cell with low vertical clearance.',
+		image: '/images/CIC Lifting Fixture Cover Image.png',
+		tags: ['SolidWorks', 'SolidWorks Simulation', 'Design for Manufacturing and Assembly'],
+	},
+	{
+		title: 'Electrolytic Stripping Fixture for HPC Blade',
+		description:
+			'Translated an existing electrolytic stripping fixture for the Stage 1 blades of the BR715 High Pressure Compressor to CAD, creating a manufacturing drawing package for future reproduction.',
+		image: '/images/Electrolytic Stripping Fixture Cover Image.png',
+		tags: ['SolidWorks', 'Reverse Engineering'],
+	}
 ];
 
 export type Education = {
