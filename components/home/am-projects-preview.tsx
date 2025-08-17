@@ -12,16 +12,15 @@ import { SectionHeader } from '@/components/ui/section-header';
 import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
-export function DeltaProjectsPreview() {
-	// Only show the first 3 projects in the preview
-	const previewProjects = projects.slice(0, 5);
+export function AMProjectsPreview() {
+	const previewProjects = projects.slice(5, 9);
 
 	return (
-		<section className="py-16 md:py-12 bg-muted/30">
+		<section className="py-16 md:py-12">
 			<div className="container px-4">
 				<SectionHeader
-					title="Delta Air Lines: Tool Design Engineering"
-					description="Explore some of the tools I designed and modelled to support aircraft and turbofan engine maintenance."
+					title="Delta Air Lines: Additive Manufacturing"
+					description="Check out some of the 3D-printed tools I designed and fabricated to prevent aircraft part rework, decrease maintenance costs, and increase technician throughput."
 				/>
 
 				<motion.div

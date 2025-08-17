@@ -13,11 +13,10 @@ import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
 export function DeltaProjectsPreview() {
-	// Only show the first 3 projects in the preview
 	const previewProjects = projects.slice(0, 5);
 
 	return (
-		<section className="py-16 md:py-12">
+		<section className="py-16 md:py-12 bg-muted/30">
 			<div className="container px-4">
 				<SectionHeader
 					title="Delta Air Lines: Tool Design Engineering"
@@ -37,7 +36,7 @@ export function DeltaProjectsPreview() {
 							variants={fadeInScale(index * 0.1)}
 							className="flex"
 						>
-							<Card className="flex flex-col h-full card-gradient border-2">
+							<Card className="flex flex-col h-full card-gradient border-0 shadow-lg">
 								<div className="relative h-72 w-full">
 									<Image
 										src={project.image}
@@ -80,14 +79,6 @@ export function DeltaProjectsPreview() {
 						</motion.div>
 					))}
 				</motion.div>
-
-				<div className="flex justify-center mt-10">
-					<Button asChild>
-						<Link href="/projects">
-							View All Projects <ArrowRight className="ml-2 h-4 w-4" />
-						</Link>
-					</Button>
-				</div>
 			</div>
 		</section>
 	);

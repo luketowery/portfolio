@@ -12,16 +12,15 @@ import { SectionHeader } from '@/components/ui/section-header';
 import { projects } from '@/lib/constants';
 import { staggerContainer, fadeInScale } from '@/lib/motion';
 
-export function DeltaProjectsPreview() {
-	// Only show the first 3 projects in the preview
-	const previewProjects = projects.slice(0, 5);
+export function GTProjectsPreview() {
+	const previewProjects = projects.slice(9, 14);
 
 	return (
 		<section className="py-16 md:py-12 bg-muted/30">
 			<div className="container px-4">
 				<SectionHeader
-					title="Delta Air Lines: Tool Design Engineering"
-					description="Explore some of the tools I designed and modelled to support aircraft and turbofan engine maintenance."
+					title="Georgia Institute of Technology: Mechanical Engineering"
+					description="Explore some of the academic and research projects I have pursued during my studies at Georgia Tech."
 				/>
 
 				<motion.div

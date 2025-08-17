@@ -101,6 +101,8 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+
+	/* Tool Design Engineering */
 	{
 		title: 'A220 Nose Landing Gear Repack Fixture',
 		description:
@@ -135,6 +137,103 @@ export const projects: Project[] = [
 			'Translated an existing electrolytic stripping fixture for the Stage 1 blades of the BR715 High Pressure Compressor to CAD, creating a manufacturing drawing package for future reproduction.',
 		image: '/images/Electrolytic Stripping Fixture Cover Image.png',
 		tags: ['SolidWorks', 'Reverse Engineering'],
+	},
+
+	/* Additive Manufacturing */
+	{
+		title: 'Ergonomic Scraper Handle for Aircraft Maintenance',
+		description:
+			'Invented a set of ergonomic scraper handles for use with disposable scrapers to increase leverage, throughput, and comfort for aircraft maintenance technicians (AMTs) while reducing short- and long-term hand injuries.',
+		image: '/images/Scraper Handle Cover Image.png',
+		tags: ['SolidWorks', 'Safety/Ergonomics', 'Design for Additive Manufacturing'],
+	},
+	{
+		title: 'Aircraft Engine Part Masking',
+		description:
+			'Created flexible, durable, reusable 3D-printed parts to cover critical features of aircraft engine parts that cannot be shot peened or blasted, reducing time and cost compared to tape masking.',
+		image: '/images/Part Masking Cover Image.png',
+		tags: ['SolidWorks', 'Design for Additive Manufacturing'],
+	},
+	{
+		title: 'Reverse Engineered Headlamp Clip',
+		description:
+			'Reverse engineered headlamp clips using 3D scanning and DesignX to improve durability and decrease replacement cost.',
+		image: '/images/Headlamp Clip Cover Image.png',
+		tags: ['SolidWorks', '3D Scanning', 'DesignX', 'Reverse Engineering'],
+	},
+	{
+		title: 'Aircraft Engine Part Protection',
+		description:
+			'Created soft, durable 3D-printed coverings to protect blades, shafts, and other parts from getting damaged or injuring technicians during transportation.',
+		image: '/images/Part Protection Cover Image.png',
+		tags: ['SolidWorks', 'Large Format 3D Printing', 'Design for Additive Manufacturing'],
+	},
+
+	/* Georgia Tech */
+	{
+		title: '3D Printed Saxophone Keys for Users with Long Fingers',
+		description:
+			'Created a simplified alto saxophone model in Siemens NX and designed three elongated 3D-printed keys that integrate into existing saxophone mechanisms and allow musicians with long fingers to play more comfortably.',
+		image: '/images/Saxophone Keys Cover Image.png',
+		tags: ['Siemens NX', 'Structural FEA', 'Nastran'],
+	},
+	{
+		title: 'Portable Push Door Opener for Wheelchair Users',
+		description:
+			'Created a proof-of-concept for a portable device that assists manual wheelchair users in opening non-compliant heavy push doors that they face in everyday life, inspired by biological mechanisms within bat feet and human legs.',
+		image: '/images/Push Door Opener Cover Image.png',
+		tags: ['Biologically-inspired Design', 'Assistive Technology', 'Product Design'],
+	},
+	{
+		title: 'Object-Distributing Competition Robot',
+		description:
+			'Led a team of four engineers to create an Arduino robot with robust and creative subsystems that overcame challenge limitations to precisely move objects on a competition track.',
+		image: '/images/Competition Robot Cover Image.png',
+		tags: ['SolidWorks', 'Fabrication', 'Rapid Prototyping', 'Mechatronics', 'Arduino', 'Technical Reports'],
+	},
+	{
+		title: 'Vacuum Wheelchair Tire Scrubber',
+		description:
+			'Invented a wheelchair tire scrubber that integrates a portable vacuum and a rotating scrub brush into a 3D-printed body to assist active wheelchair users in cleaning their tires before entering their home and tracking in debris.',
+		image: '/images/Wheelchair Tire Scrubber Cover Image.png',
+		tags: ['Product Design', 'Assistive Technology', 'Testing Design', 'Rapid Prototyping'],
+	},
+	{
+		title: 'Classic Volkswagen Model',
+		description:
+			'Used surface and solid modelling techniques in Siemens NX to design a simplified CAD model of the classic Volkswagen Beetle.',
+		image: '/images/VW Cover Image.png',
+		tags: ['Siemens NX', 'Surface Modeling'],
+	},
+
+	/* Personal */
+	{
+		title: 'Arduino Overnight Battery Saver for Smartphones',
+		description:
+			'Invented an Arduino device with 3D-printed components that unplugs a user’s phone after a set number of hours to minimize battery degradation from overnight overcharging.',
+		image: '/images/Overnight Battery Saver Cover Image.png',
+		tags: ['Arduino', 'Mechatronics', '3D Printing'],
+	},
+	{
+		title: '3D Printed Slide Calculator',
+		description:
+			'Taking inspiration from the Arithma Addiator, I fabricated a 3D-printed slide-rule calculator that performs integer addition and subtraction from 0 to 999,999.',
+		image: '/images/Calculator Cover Image.png',
+		tags: ['SolidWorks', 'Reverse Engineering', 'Multi-color 3D Printing'],
+	},
+	{
+		title: 'La Sagrada Familia Winged Ox Model',
+		description:
+			'Modelled and resin 3D-printed the Saint Luke Evangelist Spire found on La Sagrada Familia.',
+		image: '/images/Winged Ox Cover Image.png',
+		tags: ['Solidworks', 'Surface Modeling', 'SLA 3D Printing'],
+	},
+	{
+		title: 'Lithophane Picture Display Box',
+		description:
+			'Designed and fabricated a display that holds four interchangeable lithophanes (3D-printed light-activated pictures).',
+		image: '/images/Lithophane Picture Box Cover Image.png',
+		tags: ['SLA 3D Printing', 'Laser Cutting', 'SolidWorks'],
 	}
 ];
 
