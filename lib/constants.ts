@@ -8,36 +8,20 @@ export const siteConfig = {
 			href: '/',
 		},
 		{
-			title: 'About',
-			href: '/about',
+			title: 'Tool Design',
+			href: '/Tool Design',
 		},
 		{
-			title: 'Education',
+			title: 'Additive Manufacturing',
 			href: '/education',
 		},
 		{
-			title: 'Skills',
+			title: 'Georgia Tech',
 			href: '/skills',
 		},
 		{
-			title: 'Experience',
+			title: 'Personal Projects',
 			href: '/experience',
-		},
-		{
-			title: 'Projects',
-			href: '/projects',
-		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
-		{
-			title: 'Contact',
-			href: '/contact',
 		},
 	],
 	links: {
