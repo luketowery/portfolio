@@ -111,7 +111,7 @@ export const projects: Project[] = [
 		description:
 			'Designed a welded hoist adapter to lift 6’ x 6’ chemical cleaning baskets for turbofan engine parts, using stress hand calculations and SolidWorks Simulation to ensure yield resistance for loads of up to 2500 lbs.',
 		image: '/images/Hoist Adapter for Cleaning Basket Cover Image.png',
-		tags: ['SolidWorks', 'Weldments', 'SolidWorks Simualtion', 'Design for Manufacturing and Assembly'],
+		tags: ['SolidWorks', 'Weldments', 'SolidWorks Simulation', 'Design for Manufacturing and Assembly'],
 	},
 	{
 		title: 'Pressure Decay Testing Fixture',

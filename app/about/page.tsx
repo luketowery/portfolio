@@ -7,92 +7,64 @@ import { ArrowDownCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { fadeIn, staggerContainer } from '@/lib/motion';
+import { Badge } from '@/components/ui/badge';
+
+import { projects } from '@/lib/constants';
 
 export default function AboutPage() {
+	const project = projects[0];
+
 	return (
-		<div className="py-16 md:py-24">
-			<div className="container">
-				<motion.div
-					variants={staggerContainer()}
-					initial="hidden"
-					animate="show"
-					className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
-				>
-					<motion.div variants={fadeIn('right', 0.3)} className="space-y-6">
-						<h1 className="text-4xl font-bold">About Me</h1>
-						<p className="text-lg text-muted-foreground">
-							I am a passionate engineering student with a focus on innovation and problem-solving.
-							My academic journey has equipped me with strong technical skills and a deep understanding
-							of engineering principles.
-						</p>
-						<div className="space-y-4">
-							<h2 className="text-2xl font-semibold">My Journey</h2>
-							<p className="text-muted-foreground">
-								Throughout my academic career, I've been involved in various projects that have
-								helped me develop practical skills and theoretical knowledge. I believe in
-								continuous learning and staying updated with the latest technological advancements.
-							</p>
+		<div className="py-8 md:py-12">
+			<div className="container max-w-4xl mx-auto">
+					<motion.div variants={fadeIn('right', 0.3)} className="space-y-4">
+						<h1 className="text-4xl font-bold text-center">A220 Nose Landing Gear Repack Fixture</h1>
+						<div className="flex flex-wrap gap-3 mb-4 justify-center">
+  							{project.tags.map((tag, tagIndex) => (
+    							<Badge className="px-3 py-1 text-lg rounded-x2" key={tagIndex} variant="secondary">
+      								{tag}
+    							</Badge>
+  							))}
 						</div>
-						<Button className="mt-6" asChild>
-							<a href="/cv.pdf" download>
-								Download CV <ArrowDownCircle className="ml-2 h-4 w-4" />
-							</a>
-						</Button>
-					</motion.div>
+						<h2 className="text-2xl font-bold text-center">Situation</h2>
+						<p className="text-lg text-muted-foreground">
+							Aircraft maintenance technicians (AMTs) at MSP built a fixture 
+							for installing and removing the sliding tube of the A220 nose landing 
+							gear, and documentation was needed for other maintenance stations to 
+							produce the fixture.
+						</p>
 
-					<motion.div variants={fadeIn('left', 0.3)} className="relative h-[500px]">
-						<Image
-							src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg"
-							alt="Professional photo"
-							fill
-							className="object-cover rounded-lg"
-							sizes="(max-width: 768px) 100vw, 50vw"
-						/>
-					</motion.div>
-				</motion.div>
+						<h2 className="text-2xl font-bold text-center">Workflow</h2>
+						<p className="text-lg text-muted-foreground">
+							<ul className="list-disc pl-6 text-lg text-muted-foreground">
+								<li>Using the Weldment tools in SolidWorks, I translated the existing 
+									Repack Fixture into a CAD model.</li>
+								<li>I incorporated design changes documented below to improve 
+									operation and manufacturing.</li>
+								<li>With the final CAD model, I created a manufacturing drawing 
+									package and bill of materials to allow A220 Nose Landing Gear 
+									Repack Fixtures to be produced at other maintenance stations.</li>
+							</ul>
+						</p>
 
-				<motion.div
-					variants={staggerContainer()}
-					initial="hidden"
-					animate="show"
-					className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-				>
-					<motion.div variants={fadeIn('up', 0.1)}>
-						<Card className="h-full card-gradient">
-							<CardContent className="p-6">
-								<h3 className="text-xl font-semibold mb-4">Education</h3>
-								<p className="text-muted-foreground">
-									Currently pursuing a Bachelor's degree in Engineering with a focus on
-									practical applications and innovative solutions.
-								</p>
-							</CardContent>
-						</Card>
-					</motion.div>
+						<div className="flex justify-center gap-6 my-8">
+							<Image
+								alt="Professional photo"
+								src="/images/A220 Nose Landing Gear Repack Fixture/Manual Diagram.png"
+								width={600}
+								height={400}
+								className="object-cover rounded-lg"
+							/>
+							<Image
+								src="/images/A220 Nose Landing Gear Repack Fixture/Explanation Diagram.png"
+								alt="Professional photo"
+								width={600}
+    							height={400}
+    							className="object-cover rounded-lg"
+  							/>
+						</div>
 
-					<motion.div variants={fadeIn('up', 0.2)}>
-						<Card className="h-full card-gradient">
-							<CardContent className="p-6">
-								<h3 className="text-xl font-semibold mb-4">Experience</h3>
-								<p className="text-muted-foreground">
-									Gained valuable experience through internships and projects, working
-									with cutting-edge technologies and methodologies.
-								</p>
-							</CardContent>
-						</Card>
 					</motion.div>
-
-					<motion.div variants={fadeIn('up', 0.3)}>
-						<Card className="h-full card-gradient">
-							<CardContent className="p-6">
-								<h3 className="text-xl font-semibold mb-4">Skills</h3>
-								<p className="text-muted-foreground">
-									Proficient in various engineering tools and technologies, with a strong
-									foundation in problem-solving and analytical thinking.
-								</p>
-							</CardContent>
-						</Card>
-					</motion.div>
-				</motion.div>
 			</div>
 		</div>
 	);
