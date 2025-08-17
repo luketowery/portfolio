@@ -27,8 +27,8 @@ export function HeroSection() {
 					minWidth: 200.00,
 					scale: 0.8,
 					scaleMobile: 0.8,
-					color: 0xff3f81,
-					backgroundColor: 0x23153c,
+					color: 0x003049,
+					backgroundColor: 0x669bbc,
 					points: 10.00,
 					maxDistance: 15.00,
 					spacing: 20.00,
@@ -44,7 +44,7 @@ export function HeroSection() {
 	return (
 		<section className="relative overflow-hidden">
 			{/* Vanta.js Background */}
-			<div ref={vantaRef} className="absolute inset-0 z-0 opacity-60" />
+			<div ref={vantaRef} className="absolute inset-0 z-0 opacity-50" />
 
 			{/* Content */}
 			<div className="container relative z-10 px-4 py-20 md:py-32 flex flex-col items-center justify-center min-h-[90vh]">
@@ -54,18 +54,11 @@ export function HeroSection() {
 					animate="show"
 					className="max-w-3xl mx-auto text-center"
 				>
-					<motion.h2
-						variants={fadeIn('up', 0.2)}
-						className="text-3xl md:text-4xl font-bold mb-4 text-primary"
-					>
-						Mechanical Engineering
-					</motion.h2>
-
 					<motion.h1
 						variants={fadeIn('up', 0.3)}
 						className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight"
 					>
-						<span className="text-gradient">Luke Towery's</span> Portfolio
+						<span className="text-popover">Luke Towery's</span> Engineering Portfolio
 					</motion.h1>
 
 					<motion.p

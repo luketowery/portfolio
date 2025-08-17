@@ -37,7 +37,7 @@ export function DeltaProjectsPreview() {
 							variants={fadeInScale(index * 0.1)}
 							className="flex"
 						>
-							<Card className="flex flex-col h-full card-gradient">
+							<Card className="flex flex-col h-full card-gradient border-2">
 								<div className="relative h-72 w-full">
 									<Image
 										src={project.image}
