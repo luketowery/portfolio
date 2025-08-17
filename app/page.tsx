@@ -5,10 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { HeroSection } from '@/components/home/hero-section';
 import { AboutPreview } from '@/components/home/about-preview';
-import { ProjectsPreview } from '@/components/home/projects-preview';
 import { DeltaProjectsPreview } from '@/components/home/delta-projects-preview';
-import { SkillsPreview } from '@/components/home/skills-preview';
-import { ContactPreview } from '@/components/home/contact-preview';
 import { AMProjectsPreview } from '@/components/home/am-projects-preview';
 import { GTProjectsPreview } from '@/components/home/gt-projects-preview';
 import { PersonalProjectsPreview } from '@/components/home/personal-projects-preview';
@@ -75,8 +72,6 @@ export default function Home() {
 					<AMProjectsPreview />
 					<GTProjectsPreview />
 					<PersonalProjectsPreview />
-					<ContactPreview />
-					
 				</>
 			)}
 		</>

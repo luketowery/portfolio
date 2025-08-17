@@ -72,11 +72,6 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.7)}
 						className="mt-10 flex flex-wrap gap-4 justify-center"
 					>
-						<Button size="lg" asChild>
-							<Link href="/projects">
-								View Projects <ArrowRight className="ml-2 h-4 w-4" />
-							</Link>
-						</Button>
 						<Button size="lg" variant="outline" asChild>
 							<Link href="#" download>
 								Download CV <FileDown className="ml-2 h-4 w-4" />
