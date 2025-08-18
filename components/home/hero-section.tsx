@@ -47,7 +47,7 @@ export function HeroSection() {
 			<div ref={vantaRef} className="absolute inset-0 z-0 opacity-50" />
 
 			{/* Content */}
-			<div className="container relative z-10 px-4 py-20 md:py-32 flex flex-col items-center justify-center min-h-[90vh]">
+			<div className="container relative z-10 px-4 py-8 md:py-8 flex flex-col items-center justify-center min-h-[40vh]">
 				<motion.div
 					variants={staggerContainer()}
 					initial="hidden"
@@ -70,7 +70,7 @@ export function HeroSection() {
 
 					<motion.div
 						variants={fadeIn('up', 0.7)}
-						className="mt-10 flex flex-wrap gap-4 justify-center"
+						className="mt-4 mb-24 flex flex-wrap gap-4 justify-center"
 					>
 						<Button size="lg" variant="outline" asChild>
 							<Link href="#" download>
