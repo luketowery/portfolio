@@ -15,18 +15,34 @@ export default function AboutPage() {
 	const project = projects[0];
 
 	return (
-		<div className="py-8 md:py-12">
+		<div className="py-4 md:py-4">
 			<div className="container max-w-4xl mx-auto">
-					<motion.div variants={fadeIn('right', 0.3)} className="space-y-4">
-						<h1 className="text-4xl font-bold text-center">A220 Nose Landing Gear Repack Fixture</h1>
-						<div className="flex flex-wrap gap-3 mb-4 justify-center">
+					<motion.div variants={fadeIn('right', 0.3)}>
+
+						<div className="flex justify-center gap-6 my-6">
+							<img
+								alt="Professional photo"
+								src="/images/A220 Nose Landing Gear Repack Fixture Cover Image.png"
+								className="object-contain rounded-lg border-[2px] border-foreground"
+								style={{ width: 'auto', height: '500px' }}
+							/>
+						</div>
+
+						<h1 className="text-4xl font-bold text-center mb-4">A220 Nose Landing Gear Repack Fixture</h1>
+						<div className="flex flex-wrap gap-3 mb-8 justify-center">
   							{project.tags.map((tag, tagIndex) => (
-    							<Badge className="px-3 py-1 text-lg rounded-x2" key={tagIndex} variant="secondary">
+    							<Badge className="px-3 py-1 text-md rounded-x2" key={tagIndex} variant="secondary">
       								{tag}
     							</Badge>
   							))}
 						</div>
-						<h2 className="text-2xl font-bold text-center">Situation</h2>
+
+						<div className="text-center">
+  							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
+    							Situation
+  							</h2>
+						</div>
+
 						<p className="text-lg text-muted-foreground">
 							Aircraft maintenance technicians (AMTs) at MSP built a fixture 
 							for installing and removing the sliding tube of the A220 nose landing 
@@ -34,35 +50,60 @@ export default function AboutPage() {
 							produce the fixture.
 						</p>
 
-						<h2 className="text-2xl font-bold text-center">Workflow</h2>
-						<p className="text-lg text-muted-foreground">
-							<ul className="list-disc pl-6 text-lg text-muted-foreground">
-								<li>Using the Weldment tools in SolidWorks, I translated the existing 
-									Repack Fixture into a CAD model.</li>
-								<li>I incorporated design changes documented below to improve 
-									operation and manufacturing.</li>
-								<li>With the final CAD model, I created a manufacturing drawing 
-									package and bill of materials to allow A220 Nose Landing Gear 
-									Repack Fixtures to be produced at other maintenance stations.</li>
-							</ul>
-						</p>
-
 						<div className="flex justify-center gap-6 my-8">
-							<Image
+							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture/Manual Diagram.png"
-								width={600}
-								height={400}
-								className="object-cover rounded-lg"
+								className="object-contain rounded-lg border-2 border-foreground"
+								style={{ width: 'auto', height: '500px' }}
 							/>
-							<Image
-								src="/images/A220 Nose Landing Gear Repack Fixture/Explanation Diagram.png"
+							<img
 								alt="Professional photo"
-								width={600}
-    							height={400}
-    							className="object-cover rounded-lg"
-  							/>
+								src="/images/A220 Nose Landing Gear Repack Fixture/Existing Fixture.png"
+								className="object-contain rounded-lg border-2 border-foreground"
+								style={{ width: 'auto', height: '500px' }}
+							/>
 						</div>
+
+						<div className="text-center">
+  							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
+    							Workflow
+  							</h2>
+						</div>
+
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2">
+							<li>Using the <span className="font-bold">Weldment</span> tools in 
+								<span className="font-bold"> SolidWorks</span>, I translated the existing 
+								fixture (shown above) into a CAD model.</li>
+							<li>I modified aspects of the design to <span className="font-bold">improve 
+								its operation and fabrication</span>, including adding a latching toggle 
+								clamp for the retaining ring that holds the sliding tube and redesigning
+								the hinge to be made with simpler machining operations.</li>
+							<li>With the final CAD model, I created a 
+								<span className="font-bold"> manufacturing drawing package </span>  
+								and <span className="font-bold">bill of materials</span> to allow
+								A220 Nose Landing Gear Repack Fixtures to be produced at other 
+								maintenance stations.</li>
+						</ul>
+
+						<div className="flex justify-center gap-6 my-8">
+							<img
+								alt="Professional photo"
+								src="/images/A220 Nose Landing Gear Repack Fixture/Explanation Diagram.png"
+								className="object-contain rounded-lg border-[2px] border-foreground"
+								style={{ width: 'auto', height: '500px' }}
+							/>
+						</div>
+
+						<div className="flex justify-center gap-6 my-8">
+							<img
+								alt="Professional photo"
+								src="/images/A220 Nose Landing Gear Repack Fixture/Changes Diagram.png"
+								className="object-contain rounded-lg border-2 border-foreground"
+								style={{ width: 'auto', height: '500px' }}
+							/>
+						</div>
+						
 
 					</motion.div>
 			</div>
