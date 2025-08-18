@@ -71,7 +71,7 @@ export default function AboutPage() {
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
 							<li>Using the <span className="font-bold">Weldment</span> tools in 
 								<span className="font-bold"> SolidWorks</span>, I translated the existing 
 								fixture (shown above) into a CAD model.</li>
