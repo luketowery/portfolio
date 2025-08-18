@@ -7,10 +7,10 @@ export const siteConfig = {
 			title: 'Home',
 			href: '/',
 		},
-		{
-			title: 'About',
-			href: '/about',
-		},
+		{ title: "Tool Design", children: [
+      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/about" }
+      		// Add more sub-pages here
+    	]},
 		{
 			title: 'Education',
 			href: '/education',

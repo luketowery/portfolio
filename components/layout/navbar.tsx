@@ -51,18 +51,36 @@ export function Navbar() {
 							Portfolio
 						</motion.div>
 					</Link>
-					<nav className="hidden md:flex gap-6">
-						{siteConfig.mainNav.map((item) => (
-							<Link
-								key={item.href}
-								href={item.href}
-								className={`nav-link text-sm font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary active' : 'text-muted-foreground'
-									}`}
-							>
-								{item.title}
-							</Link>
-						))}
-					</nav>
+					<nav className="flex items-center gap-6">
+      					{siteConfig.mainNav.map((item) =>
+        					item.children ? (
+          						<div className="relative group" key={item.title}>
+            						<button className="px-4 py-2 font-semibold hover:bg-gray-100 rounded">
+             							{item.title}
+            						</button>
+            						<div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded z-10 min-w-[360px]">
+            							{item.children.map((child) => (
+                							<Link
+                								key={child.title}
+                  								href={child.href}
+                  								className="block px-4 py-2 hover:bg-gray-200"
+                							>
+                  								{child.title}
+                							</Link>
+            							))}
+            						</div>
+          						</div>
+        					) : (
+          						<Link
+            						key={item.title}
+            						href={item.href}
+            						className="px-4 py-2 font-semibold hover:bg-gray-100 rounded"
+          						>
+            						{item.title}
+          						</Link>
+        					)
+      					)}
+    				</nav>
 				</div>
 
 				{/* Mobile menu */}
@@ -81,16 +99,27 @@ export function Navbar() {
 								</Link>
 							</div>
 							<nav className="flex flex-col gap-4">
-								{siteConfig.mainNav.map((item) => (
-									<Link
-										key={item.href}
-										href={item.href}
-										className={`text-base font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary' : 'text-muted-foreground'
-											}`}
-									>
-										{item.title}
-									</Link>
-								))}
+								{siteConfig.mainNav.map((item) =>
+  									item.children ? (
+    									item.children.map((child) => (
+      										<Link
+        									key={child.href}
+        									href={child.href}
+        									className={`text-base font-medium transition-colors hover:text-primary ${pathname === child.href ? 'text-primary' : 'text-muted-foreground'}`}
+      									>
+        									{child.title}
+      									</Link>
+    									))
+									) : (
+    									<Link
+      										key={item.href}
+      										href={item.href}
+      										className={`text-base font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary' : 'text-muted-foreground'}`}
+    									>
+      										{item.title}
+    									</Link>
+  									)
+								)}
 							</nav>
 							<div className="mt-auto pt-4">
 								<DropdownMenu>
