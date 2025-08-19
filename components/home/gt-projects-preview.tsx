@@ -57,23 +57,18 @@ export function GTProjectsPreview() {
 										))}
 									</div>
 								</CardContent>
-								<CardFooter className="p-6 pt-0 gap-2">
-									{project.link && (
-										<Button size="sm" variant="outline" asChild>
-											<Link href={project.link} target="_blank" rel="noreferrer">
-												<ExternalLink className="h-4 w-4 mr-2" />
-												Demo
-											</Link>
-										</Button>
-									)}
-									{project.repo && (
-										<Button size="sm" variant="outline" asChild>
-											<Link href={project.repo} target="_blank" rel="noreferrer">
-												<Github className="h-4 w-4 mr-2" />
-												Repo
-											</Link>
-										</Button>
-									)}
+
+								<CardFooter className="p-6 pt-0 relative z-10">
+									<div className="flex justify-center w-full mt-4">
+										{project.href && (
+											<Button size="sm" variant="outline" asChild>
+												<Link href={project.href}>
+													Learn More  
+													<ArrowRight className="h-4 w-4 ml-2" />
+												</Link>
+											</Button>
+										)}
+									</div>	
 								</CardFooter>
 							</Card>
 						</motion.div>

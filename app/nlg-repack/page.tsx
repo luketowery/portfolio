@@ -19,7 +19,7 @@ export default function NLGRepackPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture Cover Image.png"
@@ -27,6 +27,10 @@ export default function NLGRepackPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">A220 Nose Landing Gear Repack Fixture</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -50,7 +54,7 @@ export default function NLGRepackPage() {
 							produce the fixture.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture/Manual Diagram.png"
@@ -65,13 +69,18 @@ export default function NLGRepackPage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Diagram of the sliding tube within the nose landing gear (left) and 
+							the existing A220 nose landing gear repack fixture (right).
+						</p>						
+
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
     							Workflow
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg space-y-2">
 							<li>Using the Weldment tools in SolidWorks, I translated the existing 
 								fixture (shown above) into a CAD model.</li>
 							<li>I modified aspects of the design to improve its operation and 
@@ -83,7 +92,7 @@ export default function NLGRepackPage() {
 								Repack Fixtures to be produced at other maintenance stations.</li>
 						</ul>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture/Explanation Diagram.png"
@@ -92,7 +101,12 @@ export default function NLGRepackPage() {
 							/>
 						</div>
 
-						<div className="flex justify-center gap-6 my-8">
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							CAD assembly of the improved A220 nose landing gear repack fixture, showing 
+							how it is used to carefully install and remove the sliding tube.
+						</p>
+
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture/Changes Diagram.png"
@@ -100,6 +114,12 @@ export default function NLGRepackPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Hardware and design improvements made to improve the tool's operation,
+							fabrication, and lifetime.
+						</p>						
+					
 						
 
 					</motion.div>

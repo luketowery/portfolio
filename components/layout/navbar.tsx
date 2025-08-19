@@ -35,7 +35,7 @@ export function Navbar() {
 
 	return (
 		<motion.header
-			className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
+			className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background backdrop-blur-sm shadow-md' : 'bg-transparent'
 				}`}
 			initial={{ y: -100 }}
 			animate={{ y: 0 }}
@@ -46,9 +46,9 @@ export function Navbar() {
 					<Link href="/" className="flex items-center space-x-2">
 						<motion.div
 							whileHover={{ scale: 1.05 }}
-							className="font-bold text-2xl text-gradient"
+							className="font-bold text-3xl text-popover"
 						>
-							Portfolio
+							LT
 						</motion.div>
 					</Link>
 					<nav className="flex items-center gap-6">

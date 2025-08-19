@@ -19,7 +19,7 @@ export default function HoistAdapterPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket Cover Image.png"
@@ -27,6 +27,10 @@ export default function HoistAdapterPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Hoist Adapter for Cleaning Basket</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -50,7 +54,7 @@ export default function HoistAdapterPage() {
 							lower the baskets into the chemical baths and onto rolling carts.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/CAD Diagram.png"
@@ -58,15 +62,23 @@ export default function HoistAdapterPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Final CAD model of hoist adapter.
+						</p>							
 						
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/Detail CAD Diagram.png"
 								className="object-contain rounded-lg border-[2px] border-foreground"
 								style={{ width: 'auto', height: '500px' }}
 							/>
-						</div>													
+						</div>	
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Detail view of hooks that hold the cleaning basket.
+						</p>																			
 
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
@@ -74,7 +86,7 @@ export default function HoistAdapterPage() {
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mb-8 space-y-2">
 							<li>Using Design for Manufacturing and Assembly, I designed parts in 
 								SolidWorks that could be welded, formed, or machined with available
 								 equipment.</li>
@@ -98,7 +110,7 @@ export default function HoistAdapterPage() {
 							mild steel rectangular tubing.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/Von Mises FEA.png"
@@ -107,12 +119,17 @@ export default function HoistAdapterPage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							SolidWorks Simulation plot of the Von Mises stress of the welded hoist adapter frame subjected
+							to the validation load.
+						</p>
+
 						<p className="text-lg text-muted-foreground">
 							When loaded to 3750 lb. for a safety factor of 1.5, the maximum vertical
 							 displacement is only about 0.30 inches.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/Displacement FEA.png"
@@ -121,13 +138,18 @@ export default function HoistAdapterPage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							SolidWorks Simulation plot of the vertical displacement of the welded hoist adapter frame subjected
+							to the validation load.
+						</p>						
+
 						<p className="text-lg text-muted-foreground">
 							In the worst case when a single hook is experiencing the entire 
 							validation load of 3750 lb., the maximum Von Mises stress of ~40,000
 							 psi is below the yield strength of the steel used.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2 mb-4">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/Von Mises Hook FEA.png"
@@ -136,14 +158,19 @@ export default function HoistAdapterPage() {
 							/>
 						</div>		
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Hoist Adapter for Cleaning Basket/Displacement Hook FEA.png"
 								className="object-contain rounded-lg border-2 border-foreground"
 								style={{ width: 'auto', height: '400px' }}
 							/>
-						</div>										
+						</div>	
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							SolidWorks Simulation plots of the Von Mises stress (top) and displacement (bottom)
+							of a single hook subjected to the validation load.
+						</p>																		
 
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">

@@ -19,7 +19,7 @@ export default function PressureDecayPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Pressure Decay Testing Fixture Cover Image.png"
@@ -27,6 +27,10 @@ export default function PressureDecayPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Pressure Decay Testing Fixture</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -53,7 +57,7 @@ export default function PressureDecayPage() {
 							than issues with assembly.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Pressure Decay Testing Fixture/Manual Images.png"
@@ -62,13 +66,18 @@ export default function PressureDecayPage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							Illustrations of the No.4 Bearing Support Assembly, Oil Tubes and 
+							Tube Ports.
+						</p>							
+
 						<div className="text-center">
-  							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
+  							<h2 className="text-2xl font-bold inline-block border-b-4 mb-2 border-primary">
     							Workflow
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg space-y-2">
 							<li>Using a 3D scanner, I created STLs of the geometries of the two ports on
 								 the No. 4 bearing where the Oil Supply Tube and Oil Scavenge Tube connect.</li>
 							<li>Using DesignX, I used the STL mesh geometries to extract features and create 
@@ -78,7 +87,7 @@ export default function PressureDecayPage() {
 								  manufacturer’s procedure outside of the assembly.</li>
 						</ul>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Pressure Decay Testing Fixture/CAD Image.png"
@@ -87,13 +96,18 @@ export default function PressureDecayPage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Final CAD models of the testing blanks for validating tubes outside of
+							the assembly.
+						</p>							
+
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
     							Progress
   							</h2>
 						</div>
 
-						<p className="text-lg text-muted-foreground">
+						<p className="text-lg text-muted-foreground mb-8">
 							The pressure decay testing blanks are currently being machined with the 
 							manufacturing drawing package I created, and they will prevent multi-day 
 							setbacks in assembly when Oil Supply and Oil Scavenge Tubes are faulty. 

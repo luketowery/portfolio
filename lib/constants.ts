@@ -20,7 +20,9 @@ export const siteConfig = {
 			{ title: "Aircraft Engine Part Protection", href: "/part-protection" }
     	]},
 		{ title: "Georgia Tech", children: [
-      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
+      		{ title: "Custom 3D Printed Saxophone Keys", href: "/sax-keys" },
+			{ title: "Push Door Opener for Wheelchair Users", href: "/push-door-opener" },
+			{ title: "Classic Volkswagen 3D Model", href: "/vw-model" }
     	]},
 		{ title: "Personal Projects", children: [
       		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
@@ -37,45 +39,6 @@ export const siteConfig = {
 		phone: 'tel:+1234567890',
 	},
 };
-
-export type Experience = {
-	title: string;
-	company: string;
-	location: string;
-	startDate: string;
-	endDate: string;
-	description: string[];
-	technologies: string[];
-};
-
-export const experiences: Experience[] = [
-	{
-		title: 'Engineering Intern',
-		company: 'Tech Company',
-		location: 'City, Country',
-		startDate: 'May 2023',
-		endDate: 'Aug 2023',
-		description: [
-			'Worked on developing and testing software components for embedded systems',
-			'Collaborated with senior engineers on project planning and execution',
-			'Implemented test procedures for quality assurance',
-		],
-		technologies: ['C++', 'Python', 'MATLAB', 'Git'],
-	},
-	{
-		title: 'Research Assistant',
-		company: 'University Lab',
-		location: 'City, Country',
-		startDate: 'Jan 2023',
-		endDate: 'Apr 2023',
-		description: [
-			'Assisted in research focusing on advanced materials for mechanical applications',
-			'Conducted literature reviews and compiled research findings',
-			'Performed data analysis and visualization of experimental results',
-		],
-		technologies: ['MATLAB', 'CAD', 'Data Analysis', 'Python'],
-	},
-];
 
 export type Project = {
 	title: string;
@@ -170,6 +133,7 @@ export const projects: Project[] = [
 			'Created a simplified alto saxophone model in Siemens NX and designed three elongated 3D-printed keys that integrate into existing saxophone mechanisms and allow musicians with long fingers to play more comfortably.',
 		image: '/images/Saxophone Keys Cover Image.png',
 		tags: ['Siemens NX', 'Structural FEA', 'Nastran'],
+		href: '/sax-keys'
 	},
 	{
 		title: 'Portable Push Door Opener for Wheelchair Users',
@@ -177,6 +141,7 @@ export const projects: Project[] = [
 			'Created a proof-of-concept for a portable device that assists manual wheelchair users in opening non-compliant heavy push doors that they face in everyday life, inspired by biological mechanisms within bat feet and human legs.',
 		image: '/images/Push Door Opener Cover Image.png',
 		tags: ['Biologically-inspired Design', 'Assistive Technology', 'Product Design'],
+		href: '/push-door-opener'
 	},
 	{
 		title: 'Object-Distributing Competition Robot',
@@ -198,6 +163,7 @@ export const projects: Project[] = [
 			'Used surface and solid modelling techniques in Siemens NX to design a simplified CAD model of the classic Volkswagen Beetle.',
 		image: '/images/VW Cover Image.png',
 		tags: ['Siemens NX', 'Surface Modeling'],
+		href: '/vw-model'
 	},
 
 	/* Personal */

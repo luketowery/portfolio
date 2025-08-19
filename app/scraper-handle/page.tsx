@@ -19,14 +19,18 @@ export default function ScraperHandlePage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Scraper Handle Cover Image.png"
 								className="object-contain rounded-lg border-[2px] border-foreground"
-								style={{ width: 'auto', height: '500px' }}
+								style={{ width: 'auto', height: '400px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Ergonomic Scraper Handle for Aircraft Maintenance</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -51,7 +55,7 @@ export default function ScraperHandlePage() {
 							 but it costs $21 and is not designed for optimal user comfort and leverage.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2 mb-4">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/Disposable Scrapers.png"
@@ -60,7 +64,7 @@ export default function ScraperHandlePage() {
 							/>
 						</div>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/OEM Handles.png"
@@ -69,13 +73,17 @@ export default function ScraperHandlePage() {
 							/>
 						</div>
 
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Disposable scrapers (top) and compatible handles (bottom) from Jus-N-Tyme..
+						</p>							
+
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
     							Workflow
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mb-8 space-y-2">
 							<li>Using feedback from AMTs across various shops, I iteratively designed
 								 a grip geometry that accommodates various hand sizes, grip
 								 preferences, and maintenance tasks.</li>
@@ -101,7 +109,7 @@ export default function ScraperHandlePage() {
 							purchased by Delta Air Lines for $12,000.
 						</p>											
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2 mb-4">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/-501 and -502.png"
@@ -110,16 +118,21 @@ export default function ScraperHandlePage() {
 							/>
 						</div>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/Spring Clip CAD Diagram.png"
 								className="object-contain rounded-lg border-2 border-foreground"
-								style={{ width: 'auto', height: '300px' }}
+								style={{ width: 'auto', height: '250px' }}
 							/>
-						</div>						
+						</div>	
 
-						<div className="flex justify-center gap-6 my-8">
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Handles with and without a vertical grip for the thin orange and black 
+							disposable scrapers.
+						</p>	
+
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/-504 and -505.png"
@@ -127,16 +140,26 @@ export default function ScraperHandlePage() {
 								style={{ width: 'auto', height: '300px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Handles with and without a vertical grip for the thin red 
+							disposable scrapers.
+						</p>							
 						
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Ergonomic Scraper Handle/-506.png"
 								className="object-contain rounded-lg border-2 border-foreground"
 								style={{ width: 'auto', height: '300px' }}
 							/>
-						</div>						
+						</div>	
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Handle with a vertical grip for the thick black 
+							disposable scrapers.
+						</p>												
 
 					</motion.div>
 			</div>

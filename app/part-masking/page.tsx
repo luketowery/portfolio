@@ -19,7 +19,7 @@ export default function PartMaskingPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Part Masking Cover Image.png"
@@ -27,6 +27,10 @@ export default function PartMaskingPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Aircraft Engine Part Masking</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -43,7 +47,7 @@ export default function PartMaskingPage() {
   							</h2>
 						</div>
 
-						<p className="text-lg text-muted-foreground">
+						<p className="text-lg text-muted-foreground mb-8">
 							To protect the features of engine parts that cannot be shot peened or 
 							blasted, aircraft maintenance technicians (AMTs) manually cover them 
 							with blast tape. This precise and time-consuming process often leads 
@@ -57,7 +61,7 @@ export default function PartMaskingPage() {
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mb-8 space-y-2">
 							<li>Using scanned models of the parts, I designed part masks to 
 								tightly fit around the features to be protected, accounting for 
 								the shrinkage of TPU during printing.</li>
@@ -66,7 +70,7 @@ export default function PartMaskingPage() {
 						</ul>
 
 						<div className="text-center">
-  							<h2 className="text-2xl font-bold mb-2 mt-6 inline-block border-b-4 border-primary">
+  							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
     							Example 1: CF6 Horizontal Bevel Gear
   							</h2>
 						</div>	
@@ -78,9 +82,9 @@ export default function PartMaskingPage() {
 							blast tape is used per application, which takes about 15 minutes. 
 							With this $42 set of TPU masks, application takes less than 5 minutes, 
 							and they can be reused for hundreds of parts.
-						</p>											
+						</p>																	
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Part Masking/Horizontal Bevel Gear.png"
@@ -88,6 +92,11 @@ export default function PartMaskingPage() {
 								style={{ width: 'auto', height: '400px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							CAD model of the horizontal bevel gear and its three additively manufactured
+							masks for shot peening.
+						</p>							
 
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
@@ -102,14 +111,18 @@ export default function PartMaskingPage() {
 							stator vanes for maximum engine efficiency.
 						</p>							
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Part Masking/Blisk.jpg"
 								className="object-contain rounded-lg border-2 border-foreground"
 								style={{ width: 'auto', height: '300px' }}
 							/>
-						</div>						
+						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							Additively manufactured TPU mask installed on the Stage 4 Blisk.
+						</p>													
 
 					</motion.div>
 			</div>

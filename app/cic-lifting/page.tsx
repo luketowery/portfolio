@@ -19,7 +19,7 @@ export default function CICLiftingPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/CIC Lifting Fixture Cover Image.png"
@@ -27,6 +27,10 @@ export default function CICLiftingPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Compressor Intermediate Case Lifting Fixture</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -49,7 +53,7 @@ export default function CICLiftingPage() {
 							 lifting tooling.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2 mb-4">
 							<img
 								alt="Professional photo"
 								src="/images/CIC Lifting Fixture/CAD Diagram with Case.png"
@@ -58,7 +62,7 @@ export default function CICLiftingPage() {
 							/>
 						</div>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/CIC Lifting Fixture/CAD Detail Diagram.png"
@@ -66,6 +70,11 @@ export default function CICLiftingPage() {
 								style={{ width: 'auto', height: '350px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							CAD model depicting how the lifting fixture is installed on the 
+							Compressor Intermediate Case.
+						</p>							
 
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
@@ -80,14 +89,18 @@ export default function CICLiftingPage() {
 							 tooling request.
 						</p>
 
-						<div className="flex justify-center gap-6 my-8">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/CIC Lifting Fixture/CAD Diagram without Case.png"
 								className="object-contain rounded-lg border-2 border-foreground"
 								style={{ width: 'auto', height: '400px' }}
 							/>
-						</div>												
+						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Final CAD model depicting of the lifting fixture.
+						</p>																			
 
 					</motion.div>
 			</div>

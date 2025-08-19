@@ -19,7 +19,7 @@ export default function HeadLampClipPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Headlamp Clip Cover Image.png"
@@ -27,6 +27,10 @@ export default function HeadLampClipPage() {
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
+
+						<p className="text-sm text-center text-muted-foreground mb-6">
+							All images and information used with permission of Delta Air Lines.
+						</p>							
 
 						<h1 className="text-4xl font-bold text-center mb-4">Reverse Engineered Headlamp Clip</h1>
 						<div className="flex flex-wrap gap-3 mb-8 justify-center">
@@ -49,14 +53,18 @@ export default function HeadLampClipPage() {
 							 in the shop, and replacement involves purchasing an entire new headlamp for $40.
 						</p>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="images/Head Lamp Clip/Headlamp.png"
 								className="object-contain rounded-lg border-[2px] border-foreground"
 								style={{ width: 'auto', height: '300px' }}
 							/>
-						</div>						
+						</div>	
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Streamlight headlamp used in the maintenance shop.
+						</p>												
 
 						<div className="text-center">
   							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
@@ -64,7 +72,7 @@ export default function HeadLampClipPage() {
   							</h2>
 						</div>
 
-						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
+						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg space-y-2">
 							<li>With a Keyence 3D scanner, I took three different scans at different angles 
 								and stitched them together in the scanning software to get an STL from the 
 								point cloud data.</li>
@@ -75,17 +83,21 @@ export default function HeadLampClipPage() {
 								compare the geometry of the model to the 3D scan.</li>	 
 						</ul>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="images/Head Lamp Clip/Model Images.png"
 								className="object-contain rounded-lg border-[2px] border-foreground"
 								style={{ width: 'auto', height: '500px' }}
 							/>
-						</div>							
+						</div>	
+
+						<p className="text-sm text-center text-muted-foreground mb-8">
+							Keyance 3D scan, DesignX CAD model, and deviation visualization of the headlamp clip..
+						</p>													
 
 						<div className="text-center">
-  							<h2 className="text-2xl font-bold mb-2 mt-6 inline-block border-b-4 border-primary">
+  							<h2 className="text-2xl font-bold mb-2 inline-block border-b-4 border-primary">
     							Results
   							</h2>
 						</div>	
