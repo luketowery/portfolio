@@ -14,16 +14,16 @@ export const siteConfig = {
 			{ title: "CIC Lifting Fixture", href: "/cic-lifting" }
     	]},
 		{ title: "Additive Manufacturing", children: [
-      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
-      		// Add more sub-pages here
+      		{ title: "Ergonomic Scraper Handle", href: "/scraper-handle" },
+			{ title: "Aircraft Engine Part Masking", href: "/part-masking" },
+			{ title: "Reverse Engineered Headlamp Clip", href: "/head-lamp-clip" },
+			{ title: "Aircraft Engine Part Protection", href: "/part-protection" }
     	]},
 		{ title: "Georgia Tech", children: [
       		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
-      		// Add more sub-pages here
     	]},
 		{ title: "Personal Projects", children: [
       		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
-      		// Add more sub-pages here
     	]}
 	],
 	links: {
@@ -103,6 +103,7 @@ export const projects: Project[] = [
 			'Designed a welded hoist adapter to lift 6’ x 6’ chemical cleaning baskets for turbofan engine parts, using stress hand calculations and SolidWorks Simulation to ensure yield resistance for loads of up to 2500 lbs.',
 		image: '/images/Hoist Adapter for Cleaning Basket Cover Image.png',
 		tags: ['SolidWorks', 'Weldments', 'SolidWorks Simulation', 'Design for Manufacturing and Assembly'],
+		href: '/hoist-adapter'
 	},
 	{
 		title: 'Pressure Decay Testing Fixture',
@@ -110,6 +111,7 @@ export const projects: Project[] = [
 			'Mitigated risk of multi-day disassembly setbacks due to defects in the oil tubes of an aircraft engine bearing by creating a custom pressure decay testing fixture using 3D scanning and DesignX to precisely match tube port geometry.',
 		image: '/images/Pressure Decay Testing Fixture Cover Image.png',
 		tags: ['3D Scanning', 'DesignX', 'SolidWorks', 'Reverse Engineering'],
+		href: '/pressure-decay'
 	},
 	{
 		title: 'Compressor Intermediate Case Lifting Fixture',
@@ -117,6 +119,7 @@ export const projects: Project[] = [
 			'Designed a fixture to lift the ~700lb Compressor Intermediate Case of the Trent 7000 turbofan engine for plasma spraying in a cell with low vertical clearance.',
 		image: '/images/CIC Lifting Fixture Cover Image.png',
 		tags: ['SolidWorks', 'SolidWorks Simulation', 'Design for Manufacturing and Assembly'],
+		href: '/cic-lifting'
 	},
 	{
 		title: 'Electrolytic Stripping Fixture for HPC Blade',
@@ -133,6 +136,7 @@ export const projects: Project[] = [
 			'Invented a set of ergonomic scraper handles for use with disposable scrapers to increase leverage, throughput, and comfort for aircraft maintenance technicians (AMTs) while reducing short- and long-term hand injuries.',
 		image: '/images/Scraper Handle Cover Image.png',
 		tags: ['SolidWorks', 'Safety/Ergonomics', 'Design for Additive Manufacturing'],
+		href: '/scraper-handle'
 	},
 	{
 		title: 'Aircraft Engine Part Masking',
@@ -140,6 +144,7 @@ export const projects: Project[] = [
 			'Created flexible, durable, reusable 3D-printed parts to cover critical features of aircraft engine parts that cannot be shot peened or blasted, reducing time and cost compared to tape masking.',
 		image: '/images/Part Masking Cover Image.png',
 		tags: ['SolidWorks', 'Design for Additive Manufacturing'],
+		href: '/part-masking'
 	},
 	{
 		title: 'Reverse Engineered Headlamp Clip',
@@ -147,6 +152,7 @@ export const projects: Project[] = [
 			'Reverse engineered headlamp clips using 3D scanning and DesignX to improve durability and decrease replacement cost.',
 		image: '/images/Headlamp Clip Cover Image.png',
 		tags: ['SolidWorks', '3D Scanning', 'DesignX', 'Reverse Engineering'],
+		href: '/head-lamp-clip'
 	},
 	{
 		title: 'Aircraft Engine Part Protection',
@@ -154,6 +160,7 @@ export const projects: Project[] = [
 			'Created soft, durable 3D-printed coverings to protect blades, shafts, and other parts from getting damaged or injuring technicians during transportation.',
 		image: '/images/Part Protection Cover Image.png',
 		tags: ['SolidWorks', 'Large Format 3D Printing', 'Design for Additive Manufacturing'],
+		href: '/part-protection'
 	},
 
 	/* Georgia Tech */
