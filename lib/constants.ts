@@ -82,8 +82,7 @@ export type Project = {
 	description: string;
 	image: string;
 	tags: string[];
-	link?: string;
-	repo?: string;
+	href?: string;
 
 };
 
@@ -96,6 +95,7 @@ export const projects: Project[] = [
 			'Modeled and improved the design of a welded fixture to carefully raise and lower the sliding tube of the A220 nose landing gear during installation and removal.',
 		image: '/images/A220 Nose Landing Gear Repack Fixture Cover Image.png',
 		tags: ['SolidWorks', 'Weldments', 'SolidWorks Drawings', 'Design for Manufacturing and Assembly'],
+		href: '/nlg-repack'
 	},
 	{
 		title: 'Hoist Adapter for Cleaning Basket',
