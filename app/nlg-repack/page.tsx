@@ -11,7 +11,7 @@ import { Badge } from '@/components/ui/badge';
 
 import { projects } from '@/lib/constants';
 
-export default function AboutPage() {
+export default function NLGRepackPage() {
 	const project = projects[0];
 
 	return (
@@ -72,18 +72,15 @@ export default function AboutPage() {
 						</div>
 
 						<ul className="text-lg text-muted-foreground list-disc pl-6 text-lg mt-2 space-y-2">
-							<li>Using the <span className="font-bold">Weldment</span> tools in 
-								<span className="font-bold"> SolidWorks</span>, I translated the existing 
+							<li>Using the Weldment tools in SolidWorks, I translated the existing 
 								fixture (shown above) into a CAD model.</li>
-							<li>I modified aspects of the design to <span className="font-bold">improve 
-								its operation and fabrication</span>, including adding a latching toggle 
-								clamp for the retaining ring that holds the sliding tube and redesigning
+							<li>I modified aspects of the design to improve its operation and 
+								fabrication, including adding a latching toggle clamp for the 
+								retaining ring that holds the sliding tube and redesigning
 								the hinge to be made with simpler machining operations.</li>
-							<li>With the final CAD model, I created a 
-								<span className="font-bold"> manufacturing drawing package </span>  
-								and <span className="font-bold">bill of materials</span> to allow
-								A220 Nose Landing Gear Repack Fixtures to be produced at other 
-								maintenance stations.</li>
+							<li>With the final CAD model, I created a manufacturing drawing 
+								package and a bill of materials to allow A220 Nose Landing Gear 
+								Repack Fixtures to be produced at other maintenance stations.</li>
 						</ul>
 
 						<div className="flex justify-center gap-6 my-8">

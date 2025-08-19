@@ -36,7 +36,7 @@ export function DeltaProjectsPreview() {
 							variants={fadeInScale(index * 0.1)}
 							className="flex"
 						>
-							<Card className="flex flex-col h-full card-gradient border-0 shadow-lg">
+							<Card className="flex flex-col h-full card-gradient border-0 shadow-lg overflow-hidden">
 								<div className="relative h-72 w-full">
 									<Image
 										src={project.image}
@@ -57,6 +57,7 @@ export function DeltaProjectsPreview() {
 										))}
 									</div>
 								</CardContent>
+
 								<CardFooter className="p-6 pt-0 gap-2">
 									{project.link && (
 										<Button size="sm" variant="outline" asChild>

@@ -8,33 +8,23 @@ export const siteConfig = {
 			href: '/',
 		},
 		{ title: "Tool Design", children: [
-      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/about" }
+      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" },
+			{ title: "Hoist Adapter for Cleaning Basket", href: "/hoist-adapter" },
+			{ title: "Pressure Decay Testing Fixture", href: "/pressure-decay" },
+			{ title: "CIC Lifting Fixture", href: "/cic-lifting" }
+    	]},
+		{ title: "Additive Manufacturing", children: [
+      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
       		// Add more sub-pages here
     	]},
-		{
-			title: 'Education',
-			href: '/education',
-		},
-		{
-			title: 'Skills',
-			href: '/skills',
-		},
-		{
-			title: 'Experience',
-			href: '/experience',
-		},
-		{
-			title: 'Projects',
-			href: '/projects',
-		},
-		{
-			title: 'Certificates',
-			href: '/certificates',
-		},
-		{
-			title: 'Blog',
-			href: '/blog',
-		},
+		{ title: "Georgia Tech", children: [
+      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
+      		// Add more sub-pages here
+    	]},
+		{ title: "Personal Projects", children: [
+      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
+      		// Add more sub-pages here
+    	]}
 	],
 	links: {
 		github: 'https://github.com/yourusername',
@@ -94,6 +84,7 @@ export type Project = {
 	tags: string[];
 	link?: string;
 	repo?: string;
+
 };
 
 export const projects: Project[] = [
