@@ -23,7 +23,7 @@ export default function NLGRepackPage() {
 							<img
 								alt="Professional photo"
 								src="/images/A220 Nose Landing Gear Repack Fixture Cover Image.png"
-								className="object-contain rounded-lg border-[2px] border-foreground"
+								className="object-contain rounded-lg border-[2px] border-foreground "
 								style={{ width: 'auto', height: '500px' }}
 							/>
 						</div>
