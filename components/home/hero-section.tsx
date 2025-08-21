@@ -6,6 +6,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, FileDown } from 'lucide-react';
 import * as THREE from 'three';
 import NET from 'vanta/dist/vanta.net.min';
+import { Linkedin, Mail } from 'lucide-react';
+import { siteConfig } from '@/lib/constants';
 
 import { Button } from '@/components/ui/button';
 import { fadeIn, staggerContainer } from '@/lib/motion';
@@ -65,7 +67,8 @@ export function HeroSection() {
 						variants={fadeIn('up', 0.5)}
 						className="mt-6 text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
 					>
-						A showcase of my projects, skills, and achievements in the field of engineering.
+						A showcase of my design, prototyping and simulation projects that have helped
+						me grow as a mechanical engineer.
 					</motion.p>
 
 					<motion.div
@@ -77,6 +80,16 @@ export function HeroSection() {
 								Download CV <FileDown className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>
+						<Button size="lg" variant="outline" asChild>
+    						<Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
+      							LinkedIn <Linkedin className="ml-2 h-4 w-4" />
+    						</Link>
+  						</Button>
+						<Button size="lg" variant="outline" asChild>
+    						<Link href={`mailto:${siteConfig.links.email}`}>
+      							Email <Mail className="ml-2 h-4 w-4" />
+    						</Link>
+  						</Button>
 					</motion.div>
 				</motion.div>
 			</div>

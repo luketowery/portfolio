@@ -1,3 +1,5 @@
+import { title } from "node:process";
+
 export const siteConfig = {
 	name: 'Engineering Portfolio',
 	description:
@@ -22,21 +24,14 @@ export const siteConfig = {
 		{ title: "Georgia Tech", children: [
       		{ title: "Custom 3D Printed Saxophone Keys", href: "/sax-keys" },
 			{ title: "Push Door Opener for Wheelchair Users", href: "/push-door-opener" },
+			{ title: "Object-Distributing Competition Robot", href: "/competition-robot" },
+			{ title: "Vacuum Wheelchair Tire Scrubber", href: "/wheelchair-tire-scrubber" },
 			{ title: "Classic Volkswagen 3D Model", href: "/vw-model" }
-    	]},
-		{ title: "Personal Projects", children: [
-      		{ title: "A220 Nose Landing Gear Repack Fixture", href: "/nlg-repack" }
     	]}
 	],
 	links: {
-		github: 'https://github.com/yourusername',
-		linkedin: 'https://linkedin.com/in/yourusername',
-		twitter: 'https://twitter.com/yourusername',
-		facebook: 'https://facebook.com/yourusername',
-		instagram: 'https://instagram.com/yourusername',
-		whatsapp: 'https://wa.me/yourphonenumber',
-		email: 'mailto:youremail@example.com',
-		phone: 'tel:+1234567890',
+		linkedin: 'https://linkedin.com/in/luketowery',
+		email: 'mailto:luketowery3@example.com'
 	},
 };
 
@@ -149,6 +144,7 @@ export const projects: Project[] = [
 			'Led a team of four engineers to create an Arduino robot with robust and creative subsystems that overcame challenge limitations to precisely move objects on a competition track.',
 		image: '/images/Competition Robot Cover Image.png',
 		tags: ['SolidWorks', 'Fabrication', 'Rapid Prototyping', 'Mechatronics', 'Arduino', 'Technical Reports'],
+		href: '/competition-robot'
 	},
 	{
 		title: 'Vacuum Wheelchair Tire Scrubber',
@@ -156,6 +152,7 @@ export const projects: Project[] = [
 			'Invented a wheelchair tire scrubber that integrates a portable vacuum and a rotating scrub brush into a 3D-printed body to assist active wheelchair users in cleaning their tires before entering their home and tracking in debris.',
 		image: '/images/Wheelchair Tire Scrubber Cover Image.png',
 		tags: ['Product Design', 'Assistive Technology', 'Testing Design', 'Rapid Prototyping'],
+		href: '/wheelchair-tire-scrubber'
 	},
 	{
 		title: 'Classic Volkswagen Model',

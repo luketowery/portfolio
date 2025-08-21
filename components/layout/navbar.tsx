@@ -34,36 +34,22 @@ export function Navbar() {
 	}, []);
 
 	return (
-		<motion.header
-			className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-background backdrop-blur-sm shadow-md' : 'bg-transparent'
-				}`}
-			initial={{ y: -100 }}
-			animate={{ y: 0 }}
-			transition={{ duration: 0.5 }}
-		>
-			<div className="container flex h-16 items-center justify-between py-4">
-				<div className="flex items-center gap-6 md:gap-10">
-					<Link href="/" className="flex items-center space-x-2">
-						<motion.div
-							whileHover={{ scale: 1.05 }}
-							className="font-bold text-3xl text-popover"
-						>
-							LT
-						</motion.div>
-					</Link>
-					<nav className="flex items-center gap-6">
+		<header className="fixed top-0 w-full z-50 bg-card">
+			<nav className="flex items-center justify-between bg-card px-4 py-3">
+				<div className="flex-1 flex justify-center bg-card">
+					<nav className="flex items-center bg-card gap-6">
       					{siteConfig.mainNav.map((item) =>
         					item.children ? (
           						<div className="relative group" key={item.title}>
-            						<button className="px-4 py-2 font-semibold hover:bg-gray-100 rounded">
+            						<button className="px-4 py-2 font-semibold text-lg hover:bg-gray-100 rounded">
              							{item.title}
             						</button>
-            						<div className="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded z-10 min-w-[360px]">
+            						<div className="absolute left-1/2 -translate-x-1/2 hidden group-hover:block bg-white shadow-lg rounded z-10 min-w-[360px]">
             							{item.children.map((child) => (
                 							<Link
                 								key={child.title}
                   								href={child.href}
-                  								className="block px-4 py-2 hover:bg-gray-200"
+                  								className="block px-4 py-2 text-center hover:bg-gray-200"
                 							>
                   								{child.title}
                 							</Link>
@@ -74,7 +60,7 @@ export function Navbar() {
           						<Link
             						key={item.title}
             						href={item.href}
-            						className="px-4 py-2 font-semibold hover:bg-gray-100 rounded"
+            						className="px-4 py-2 font-semibold text-lg hover:bg-gray-100 rounded"
           						>
             						{item.title}
           						</Link>
@@ -82,83 +68,7 @@ export function Navbar() {
       					)}
     				</nav>
 				</div>
-
-				{/* Mobile menu */}
-				<div className="md:hidden">
-					<Sheet>
-						<SheetTrigger asChild>
-							<Button variant="ghost" size="icon">
-								<Menu className="h-5 w-5" />
-								<span className="sr-only">Toggle menu</span>
-							</Button>
-						</SheetTrigger>
-						<SheetContent className="flex flex-col p-6">
-							<div className="flex items-center justify-between mb-8">
-								<Link href="/" className="flex items-center space-x-2">
-									<span className="font-bold text-2xl text-gradient">Portfolio</span>
-								</Link>
-							</div>
-							<nav className="flex flex-col gap-4">
-								{siteConfig.mainNav.map((item) =>
-  									item.children ? (
-    									item.children.map((child) => (
-      										<Link
-        									key={child.href}
-        									href={child.href}
-        									className={`text-base font-medium transition-colors hover:text-primary ${pathname === child.href ? 'text-primary' : 'text-muted-foreground'}`}
-      									>
-        									{child.title}
-      									</Link>
-    									))
-									) : (
-    									<Link
-      										key={item.href}
-      										href={item.href}
-      										className={`text-base font-medium transition-colors hover:text-primary ${pathname === item.href ? 'text-primary' : 'text-muted-foreground'}`}
-    									>
-      										{item.title}
-    									</Link>
-  									)
-								)}
-							</nav>
-							<div className="mt-auto pt-4">
-								<DropdownMenu>
-									<DropdownMenuTrigger asChild>
-										<Button variant="outline" className="w-full justify-between">
-											Social Links
-											<ChevronDown className="h-4 w-4 ml-2" />
-										</Button>
-									</DropdownMenuTrigger>
-									<DropdownMenuContent align="end">
-										<DropdownMenuItem asChild>
-											<Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
-												GitHub
-											</Link>
-										</DropdownMenuItem>
-										<DropdownMenuItem asChild>
-											<Link href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
-												LinkedIn
-											</Link>
-										</DropdownMenuItem>
-										<DropdownMenuItem asChild>
-											<Link href={siteConfig.links.twitter} target="_blank" rel="noreferrer">
-												Twitter
-											</Link>
-										</DropdownMenuItem>
-									</DropdownMenuContent>
-								</DropdownMenu>
-							</div>
-						</SheetContent>
-					</Sheet>
-				</div>
-
-				{/* Desktop actions */}
-				<div className="hidden md:flex items-center gap-4">
-					<Link href="/contact">
-						<Button>Contact Me</Button>
-					</Link>
-				</div>
-			</div>
-		</motion.header>
+			</nav>
+		</header>
 	);
 }

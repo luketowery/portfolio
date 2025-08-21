@@ -19,7 +19,7 @@ export default function SaxKeysPage() {
 			<div className="container max-w-4xl mx-auto">
 					<motion.div variants={fadeIn('right', 0.3)}>
 
-						<div className="flex justify-center gap-6 my-6">
+						<div className="flex justify-center gap-6 my-2">
 							<img
 								alt="Professional photo"
 								src="/images/Saxophone Keys Cover Image.png"
@@ -275,7 +275,7 @@ export default function SaxKeysPage() {
   							</h2>
 						</div>
 
-						<p className="text-lg text-muted-foreground mb-4">
+						<p className="text-lg text-muted-foreground">
 							The three elongated keys resist yielding and interference with other keys,
 							 proving that 3D printing provides an affordable solution for custom 
 							 instrument keys.

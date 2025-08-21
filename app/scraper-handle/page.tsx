@@ -74,7 +74,7 @@ export default function ScraperHandlePage() {
 						</div>
 
 						<p className="text-sm text-center text-muted-foreground mb-8">
-							Disposable scrapers (top) and compatible handles (bottom) from Jus-N-Tyme..
+							Disposable scrapers (top) and compatible handles (bottom) from Jus-N-Tyme.
 						</p>							
 
 						<div className="text-center">
