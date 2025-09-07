@@ -76,7 +76,7 @@ export function HeroSection() {
 						className="mt-4 mb-24 flex flex-wrap gap-4 justify-center"
 					>
 						<Button size="lg" variant="outline" asChild>
-							<Link href="#" download>
+							<Link href="/Luke_Towery_Resume_08-25.pdf" download>
 								Download CV <FileDown className="ml-2 h-4 w-4" />
 							</Link>
 						</Button>

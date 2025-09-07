@@ -58,7 +58,7 @@ export function AboutPreview() {
 							<Card className="card-gradient">
 								<CardContent className="p-4">
 									<h4 className="font-semibold">Certified GD&T Technologist</h4>
-									<p className="text-sm text-muted-foreground">ASME 14.5Y-2009 Exam in Progress</p>
+									<p className="text-sm text-muted-foreground">ASME Y14.5-2009</p>
 								</CardContent>
 							</Card>
 							<Card className="card-gradient">
